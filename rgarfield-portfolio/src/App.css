@@ -1,21 +1,103 @@
 .App {
   text-align: center;
   background-color: rgb(170, 218, 158);
+  font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+.home-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.home-info {
+  margin-bottom: 1.5em;
 }
 
 .home-name {
   margin-top: 0;
   padding: 0;
-  font-size: 125px;
-  font-weight: bold;
+  font-size: 10rem;
+  font-weight: lighter;
 }
 
 .home-title {
   margin-top: -50px;
   color: #9c2e35;
-  font-size: 30px;
+  font-size: 2.5rem;
+}
+
+.nav-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.nav-button {
+  font-family: inherit;
+  font-weight: bold;
+  background-color: transparent;
+  background-color: rgba(126, 126, 126, 0.134);
+  border: none;
+  border-radius: .25rem;
+  font-size: 1.25rem;
+  transition: 0.5s;
+  margin: 0 1rem 0 1rem;
+  padding: .25rem;
+}
+
+.nav-button:hover {
+  cursor: pointer;
+  background-color: rgb(142, 140, 140);
+  transition: 0.5s;
+}
+
+.nav-button:active {
+  cursor: pointer;
+  background-color: rgb(126, 126, 126);
+  transition: 0.5s;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  font-weight: lighter;
+  
 }
 
 .about-photo {
+  margin: 1rem;
+  width: 20%;
   border-radius: 50%;
+}
+
+.about-description {
+  margin: 0 15% 0 15%;
+  font-size: 1.75rem;
+  font-weight: lighter;
+}
+
+.contact {
+  height: 50vh;
+}
+
+.contact h2 {
+  margin: 5rem;
+  font-size: 2.5rem;
+  font-weight: lighter;
+}
+
+.contact-option {
+  color: black;
+  font-size: 4rem;
+  margin: 1rem;
+}
+
+.contact-option:hover {
+  cursor: pointer;
+  color: rgb(142, 140, 140);
+  transition: 0.5s;
 }
