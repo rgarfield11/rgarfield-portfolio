@@ -26,12 +26,14 @@
 }
 
 .home-title {
-  margin-top: -50px;
-  color: #9c2e35;
+  margin-top: -1rem;
+  color: #D76C1F;
   font-size: 2.5rem;
+  font-weight: lighter;
 }
 
 .nav-buttons {
+  margin-top: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -91,13 +93,13 @@
 }
 
 .contact-option {
-  color: black;
+  color: #424242;
   font-size: 4rem;
   margin: 1rem;
 }
 
 .contact-option:hover {
   cursor: pointer;
-  color: rgb(142, 140, 140);
+  color: #9E9E9E;
   transition: 0.5s;
 }
