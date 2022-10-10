@@ -8,15 +8,16 @@ import Contact from "./Contact"
 import '../App.css';
 
 function App() {
-  const [showNav, setShowNav] = useState(false)
+  let [showNavigation, setShowNavigation] = useState(false)
   
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY < 650) {
-        setShowNav(false);
+        setShowNavigation(false);
+
       }
       if (window.scrollY > 650) {
-        setShowNav(true);
+        setShowNavigation(true);
       }
     })
   }, [window.scrollY])
@@ -44,19 +45,15 @@ function App() {
       smooth: true
     });
   }
-
-  const toggleNav = showNav ? 
-    <Nav 
+  
+  return (
+    <div className="App">
+      <Nav
       aboutScroll={aboutScroll}
       projectsScroll={projectsScroll}
       contactScroll={contactScroll}
       homeScroll={homeScroll}
-    /> : null;
-
-  
-  return (
-    <div className="App">
-      {toggleNav}
+    />
       <div className="home-section" name="home">
         <Home 
           aboutScroll={aboutScroll}

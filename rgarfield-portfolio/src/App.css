@@ -4,6 +4,10 @@
   font-family:Georgia, 'Times New Roman', Times, serif
 }
 
+.nav-main {
+  position :fixed;
+}
+
 .home-section {
   display: flex;
   flex-direction: column;
